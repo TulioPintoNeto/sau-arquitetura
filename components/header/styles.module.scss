@@ -1,0 +1,46 @@
+@use "sass:map";
+@import "colors.scss";
+
+$header-bg: map.get($secondary-colors, "100");
+
+.header {
+    background: rgba($header-bg, 0.85);
+    position: absolute;
+    width: 100%;
+}
+
+.row {
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    padding: 8px 0;
+}
+
+.firstItemsBox {
+    display: flex;
+}
+
+.firstItemsBox > div {
+    margin-right: 64px;
+}
+
+.imageBox {
+    border-radius: 200px;
+    border: 1px solid map.get($primary-colors, "100");
+    background: white;
+    height: 150px;
+    overflow: hidden;
+    align-self: flex-start;
+}
+
+.secondItemsBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.secondItemsBox > div {
+    margin-left: 64px;
+}

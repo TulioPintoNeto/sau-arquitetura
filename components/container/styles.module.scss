@@ -1,0 +1,23 @@
+@import "breakpoints";
+
+.container {
+    margin: 0 auto;
+
+    width: 540px;
+
+    @include md {
+        width: 720px;
+    }
+
+    @include lg {
+        width: 960px;
+    }
+
+    @include xl {
+        width: 1140px;
+    }
+
+    @include xxl {
+        width: 1320px;
+    }
+}

@@ -1,0 +1,52 @@
+@use "sass:map";
+@import "colors.scss";
+
+:root {
+    --border-radius: 12px;
+    --primary-font: "Helvetica", "Arial", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+
+    --primary-color: #{map.get($primary-colors, "500")};
+    --secondary-color: #{map.get($secondary-colors, "50")};
+    --bg-primary-color: #{map.get($secondary-colors, "50")};
+    --bg-secondary-color: #{map.get($secondary-colors, "500")};
+    --font-primary-color: #0f0f0f;
+    --font-secondary-color: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+body {
+    color: var(--font-primary-color);
+    font-family: var(--primary-font);
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+}
+
+h2 {
+    font-size: 2.3rem;
+}
