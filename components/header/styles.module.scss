@@ -2,21 +2,23 @@
 @import "colors.scss";
 
 $header-bg: map.get($secondary-colors, "100");
+$header-border-color: map.get($secondary-colors, "500");
 
 .header {
     background: rgba($header-bg, 0.85);
     position: absolute;
     width: 100%;
+    border-bottom: 1px solid $header-border-color;
 }
 
 .row {
     align-items: center;
-    font-size: 1.2rem;
-    font-family: var(--secondary-font);
     display: flex;
-    justify-content: center;
-    height: 100px;
-    padding: 8px 0;
+    font-size: 0.8rem;
+    font-family: var(--secondary-font);
+    height: 48px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .firstItemsBox {
@@ -24,16 +26,17 @@ $header-bg: map.get($secondary-colors, "100");
 }
 
 .firstItemsBox > div {
-    margin-right: 64px;
+    margin-right: 24px;
 }
 
 .imageBox {
     border-radius: 200px;
-    border: 1px solid map.get($primary-colors, "100");
-    background: white;
-    height: 150px;
+    height: 80px;
     overflow: hidden;
-    align-self: flex-start;
+    position: absolute;
+    top: 4px;
+
+    left: calc(50% - 100px / 2);
 }
 
 .secondItemsBox {
