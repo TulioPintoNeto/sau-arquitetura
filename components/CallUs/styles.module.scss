@@ -1,0 +1,26 @@
+@use "sass:map";
+@import "colors.scss";
+
+$call-us-bg: map.get($secondary-colors, "900");
+$call-us-border: map.get($secondary-colors, "800");
+
+.callUs {
+    align-items: center;
+    background: $call-us-bg;
+    bottom: 16px;
+    border: 1px solid $call-us-border;
+    border-radius: 4px;
+    color: var(--font-secondary-color);
+    display: flex;
+    font-size: 0.84rem;
+    justify-content: space-between;
+    left: 20%;
+    padding: 8px 16px;
+    position: fixed;
+    width: 60%;
+}
+
+.callUs .button {
+    margin: 0 4px;
+    font-size: 0.84rem;
+}

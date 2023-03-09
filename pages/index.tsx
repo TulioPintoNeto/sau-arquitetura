@@ -1,5 +1,6 @@
 import Head from "next/head";
-import HomeMain from "./../components/home-main/index";
+import HomeMain from "../components/HomeMain/index";
+import CallUs from "./../components/CallUs/index";
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             </Head>
             <main>
                 <HomeMain />
+                <CallUs />
             </main>
         </>
     );

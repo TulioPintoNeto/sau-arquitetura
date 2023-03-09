@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Container from "../container";
+import Container from "../Container";
 import styles from "./styles.module.scss";
 
 const Header = () => {
