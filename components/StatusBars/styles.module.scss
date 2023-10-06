@@ -1,0 +1,34 @@
+@use "sass:map";
+@import "colors.scss";
+
+$statusBarBackground: map.get($secondary-colors, "200");
+
+.statusBarSection {
+    background: $statusBarBackground;
+}
+
+.paragraph {
+    font-size: 1.1rem;
+    margin: 0 auto 16px;
+    max-width: 66%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+
+    & > div:first-child {
+        width: 60%;
+    }
+
+    & > div:last-child {
+        width: 40%;
+    }
+}
+
+.numberBox {
+    margin-bottom: 16px;
+    p {
+        margin-bottom: 8px;
+    }
+}

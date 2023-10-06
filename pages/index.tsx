@@ -1,6 +1,7 @@
 import Head from "next/head";
 import HomeMain from "../components/HomeMain/index";
 import CallUs from "./../components/CallUs/index";
+import StatusBars from "./../components/StatusBars/index";
 
 export default function Home() {
     return (
@@ -16,8 +17,9 @@ export default function Home() {
             </Head>
             <main>
                 <HomeMain />
-                <CallUs />
+                <StatusBars />
             </main>
+            <CallUs />
         </>
     );
 }

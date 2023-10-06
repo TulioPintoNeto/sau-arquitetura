@@ -21,3 +21,10 @@
         width: 1320px;
     }
 }
+
+$verticalPadding: 100px;
+
+.container.verticalPadding {
+    padding-top: $verticalPadding;
+    padding-bottom: $verticalPadding;
+}
