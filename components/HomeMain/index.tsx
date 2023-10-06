@@ -1,5 +1,6 @@
 import Container from "../Container";
 import styles from "./styles.module.scss";
+import { HeaderSection } from './../HeaderSection/index';
 
 const HomeMain = () => {
   return (
@@ -7,8 +8,10 @@ const HomeMain = () => {
       <div className={styles.mainSectionBox}>
         <Container>
           <div className={styles.constrainedBox}>
-            <p>Projetando e realizando sonhos</p>
-            <h2>Arquitetura e Construção Civil em Pelotas</h2>
+            <HeaderSection 
+              title="Arquitetura e Construção Civil em Pelotas"
+              text="Projetando e realizando sonhos"
+            />
           </div>
         </Container>
       </div>
