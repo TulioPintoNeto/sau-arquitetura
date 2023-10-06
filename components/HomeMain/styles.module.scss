@@ -1,28 +1,50 @@
+@use "sass:map";
 @import "breakpoints";
+@import "colors";
+
+$line-color: map.get($primary-colors, "500");
 
 .background {
-    background: url("/background-home.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--secondary-color);
-    height: 100vh;
-    justify-content: center;
-    // text-shadow: 0 0 2px #fff;
-    width: 100vw;
+  background: url("/background-home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
 }
 
 .mainSectionBox {
-    background: rgba(255,255,255,0.3);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 calc(9vh + 9vw) 120px 0;
-    text-align: right;
-    width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20vh;
+  text-align: left;
+  width: 100%;
 }
 
-.background h2 {
-    text-transform: uppercase;
+.constrainedBox {
+    width: 80%;
+}
+
+.constrainedBox p {
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.constrainedBox p::after {
+    content: '';
+    width: 87px;
+    height: 3px;
+    background-color: $line-color;
+    position: absolute;
+    bottom: -16px;
+    left: -30px;
+}
+
+.constrainedBox h2 {
+    font-size: 4rem;
 }
