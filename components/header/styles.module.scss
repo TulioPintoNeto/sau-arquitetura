@@ -1,42 +1,35 @@
 @use "sass:map";
 @import "colors.scss";
 
-$header-bg: map.get($secondary-colors, "100");
 $header-border-color: map.get($secondary-colors, "500");
 
 .header {
-    background: rgba($header-bg, 0.85);
-    position: fixed;
+    position: absolute;
     width: 100%;
-    border-bottom: 1px solid $header-border-color;
+    top: 0;
 }
 
 .row {
     align-items: center;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-family: var(--secondary-font);
-    height: 48px;
+    font-weight: 500;
     justify-content: space-between;
     position: relative;
+    text-transform: uppercase;
 }
 
-.firstItemsBox {
+.menu {
     display: flex;
 }
 
-.firstItemsBox > div {
-    margin-right: 24px;
+.menu > div {
+    margin-left: 48px;
 }
 
 .imageBox {
-    border-radius: 200px;
-    height: 80px;
-    overflow: hidden;
-    position: absolute;
-    top: 4px;
-
-    left: calc(50% - 100px / 2);
+    padding: 24px 0;
 }
 
 .secondItemsBox {
