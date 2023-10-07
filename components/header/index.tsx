@@ -17,10 +17,9 @@ const Header = () => {
                         />
                     </div>
                     <div className={styles.menu}>
-                        <Button className={styles.menuButton} transparent>Home</Button>
-                        <Button className={styles.menuButton} transparent>Sobre</Button>
-                        <Button className={styles.menuButton} transparent>Serviços</Button>
-                        <Button className={styles.menuButton} transparent>Depoimentos</Button>
+                        <Button className={styles.menuButton} href="#sobre" transparent>Sobre</Button>
+                        <Button className={styles.menuButton} href="#servicos" transparent>Serviços</Button>
+                        <Button className={styles.menuButton} href="#depoimentos" transparent>Depoimentos</Button>
                     </div>
                 </nav>
             </Container>

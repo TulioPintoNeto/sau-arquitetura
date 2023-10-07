@@ -5,7 +5,7 @@ import { PersonSection } from "./PersonSection";
 
 const AboutUs = () => {
   return (
-    <section className={styles.statusBarSection}>
+    <section className={styles.statusBarSection} id="sobre">
       <Container verticalPadding>
         <div className={styles.row}>
           <div>
