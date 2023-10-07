@@ -1,0 +1,46 @@
+@import 'breakpoints';
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &.reversed {
+    flex-direction: column-reverse;
+  }
+}
+
+.imageBox {
+  position: relative;
+  height: 109px;
+
+  @include md {
+    height: 159px;
+  }
+
+  @include lg {
+    height: 225px;
+  }
+
+  @include xl {
+    height: 275px;
+  }
+
+  @include xxl {
+    height: 325px;
+  }
+}
+
+.textBox {
+  margin: 24px 0;
+
+  & :first-child {
+    font-size: 1.4375rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  & :last-child {
+    font-size: 0.875rem;
+    line-height: 26px;
+  }
+}

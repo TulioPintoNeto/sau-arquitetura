@@ -1,6 +1,6 @@
-import Container from "../Container";
+import Container from "../../components/Container";
 import styles from "./styles.module.scss";
-import { HeaderSection } from './../HeaderSection/index';
+import { HeaderSection } from '../../components/HeaderSection/index';
 
 const HomeMain = () => {
   return (
@@ -9,8 +9,8 @@ const HomeMain = () => {
         <Container>
           <div className={styles.constrainedBox}>
             <HeaderSection 
-              title="Arquitetura e Construção Civil em Pelotas"
               text="Projetando e realizando sonhos"
+              title="Arquitetura e Construção Civil em Pelotas"
             />
           </div>
         </Container>
