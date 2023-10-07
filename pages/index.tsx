@@ -2,6 +2,7 @@ import Head from "next/head";
 import HomeMain from "../containers/HomeMain/index";
 import CallUs from "./../components/CallUs/index";
 import AboutUs from "../containers/AboutUs/index";
+import { Services } from "../containers/Services";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
             <main>
                 <HomeMain />
                 <AboutUs />
+                <Services />
             </main>
             <CallUs />
         </>

@@ -1,0 +1,8 @@
+@use 'sass:map';
+@import 'colors';
+
+$services-bg-color: map.get($secondary-colors, '200');
+
+.services {
+  background-color: $services-bg-color;
+}

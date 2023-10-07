@@ -2,23 +2,35 @@
 @import "colors";
 
 $line-color: map.get($primary-colors, "500");
+$lineWidth: 88px;
 
-.headerSection p {
-  font-weight: 700;
-  margin-bottom: 40px;
-  position: relative;
-}
+.headerSection {
+  h2 {
+    font-size: 4rem;
+  }
 
-.headerSection p::after {
-  content: '';
-  width: 87px;
-  height: 3px;
-  background-color: $line-color;
-  position: absolute;
-  bottom: -16px;
-  left: -30px;
-}
+  p {
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
 
-.headerSection h2 {
-  font-size: 4rem;
+    &::after {
+      content: "";
+      width: $lineWidth;
+      height: 4px;
+      background-color: $line-color;
+      position: absolute;
+      bottom: -16px;
+      left: -30px;
+    }
+  }
+
+  &.center {
+    text-align: center;
+
+    & p::after {
+      bottom: -24px;
+      left: calc(50% - $lineWidth / 2);
+    }
+  }
 }
