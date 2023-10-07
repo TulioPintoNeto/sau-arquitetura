@@ -21,6 +21,7 @@ $header-border-color: map.get($secondary-colors, "500");
 }
 
 .menu {
+    align-items: center;
     display: flex;
 }
 

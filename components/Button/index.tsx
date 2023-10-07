@@ -1,6 +1,25 @@
-import { Button as MuiButton, ButtonProps } from "@mui/material";
-const Button = (props: ButtonProps) => {
-    return <MuiButton color="primary" variant="outlined" {...props} />;
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from "@mui/material";
+import CN from "classnames";
+import styles from "./styles.module.scss";
+
+type ButtonProps = MuiButtonProps & {
+  transparent?: boolean;
+};
+
+const Button = ({ transparent, ...props }: ButtonProps) => {
+  return (
+    <MuiButton
+      className={CN(props.className, {
+        [styles.transparent]: transparent,
+      })}
+      color="primary"
+      variant="outlined"
+      {...props}
+    />
+  );
 };
 
 export default Button;
