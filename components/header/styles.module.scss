@@ -23,10 +23,18 @@ $header-border-color: map.get($secondary-colors, "500");
 .menu {
     align-items: center;
     display: flex;
+
+    & > * {
+      margin: 0 8px;
+    }
 }
 
 .menu > div {
     margin-left: 48px;
+}
+
+.menuButton:hover {
+  background: rgba(#222, 0.1);
 }
 
 .imageBox {

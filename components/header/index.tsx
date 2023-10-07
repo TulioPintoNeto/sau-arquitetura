@@ -17,10 +17,10 @@ const Header = () => {
                         />
                     </div>
                     <div className={styles.menu}>
-                        <div>Home</div>
-                        <div>Sobre</div>
-                        <div>Serviços</div>
-                        <div>Depoimentos</div>
+                        <Button className={styles.menuButton} transparent>Home</Button>
+                        <Button className={styles.menuButton} transparent>Sobre</Button>
+                        <Button className={styles.menuButton} transparent>Serviços</Button>
+                        <Button className={styles.menuButton} transparent>Depoimentos</Button>
                     </div>
                 </nav>
             </Container>

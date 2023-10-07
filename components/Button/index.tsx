@@ -12,12 +12,10 @@ type ButtonProps = MuiButtonProps & {
 const Button = ({ transparent, ...props }: ButtonProps) => {
   return (
     <MuiButton
-      className={CN(props.className, {
+      {...props}
+      className={CN(props.className, styles.button, {
         [styles.transparent]: transparent,
       })}
-      color="primary"
-      variant="outlined"
-      {...props}
     />
   );
 };

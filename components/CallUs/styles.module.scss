@@ -18,11 +18,6 @@
 
 .callUs .button {
     color: var(--font-secondary-color);
-    margin: 0 4px;
-    border: none;
     font-size: 0.84rem;
-
-    &:hover {
-        background: rgba(#222, 0.2);
-    }
+    margin: 0 4px;
 }
