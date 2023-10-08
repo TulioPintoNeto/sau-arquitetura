@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  margin: 0 -36px;
+
+  &:first-child {
+    margin-bottom: 160px;
+  }
+
+  & > * {
+    flex: 1;
+    margin: 0 18px;
+  }
+}

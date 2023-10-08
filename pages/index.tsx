@@ -3,6 +3,7 @@ import HomeMain from "containers/HomeMain/index";
 import CallUs from "components/CallUs/index";
 import AboutUs from "containers/AboutUs/index";
 import { Services } from "containers/Services";
+import { Testimonials } from "src/containers/Testimonials";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                 <HomeMain />
                 <AboutUs />
                 <Services />
+                <Testimonials />
             </main>
             <CallUs />
         </>
