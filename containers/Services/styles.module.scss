@@ -6,3 +6,9 @@ $services-bg-color: map.get($secondary-colors, '200');
 .services {
   background-color: $services-bg-color;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 240px);
+}
