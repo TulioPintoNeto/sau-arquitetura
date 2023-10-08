@@ -1,13 +1,13 @@
-import styles from "./styles.module.scss";
 import Container from "components/Container/index";
 import { HeaderSection } from "components/HeaderSection";
 import { PersonSection } from "./PersonSection";
+import { Row } from "src/components/Row";
 
 const AboutUs = () => {
   return (
-    <section className={styles.statusBarSection} id="sobre">
+    <section id="sobre">
       <Container verticalPadding>
-        <div className={styles.row}>
+        <Row>
           <div>
             <HeaderSection text="Algumas palavras" title="Sobre nós" />
           </div>
@@ -28,7 +28,7 @@ const AboutUs = () => {
               reversed
             />
           </div>
-        </div>
+        </Row>
       </Container>
     </section>
   );

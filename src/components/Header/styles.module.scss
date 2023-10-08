@@ -37,10 +37,6 @@ $header-border-color: map.get($secondary-colors, "500");
   background: rgba(#222, 0.1);
 }
 
-.imageBox {
-    padding: 24px 0;
-}
-
 .secondItemsBox {
     display: flex;
     justify-content: flex-end;

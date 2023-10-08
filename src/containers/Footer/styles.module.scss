@@ -1,0 +1,22 @@
+.footer {
+  background: url("/background-footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.paragraph {
+  line-height: 1.4rem;
+  font-size: 0.88rem;
+}
