@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
-import Container from "../../components/Container/index";
-import { HeaderSection } from "../../components/HeaderSection";
+import Container from "components/Container/index";
+import { HeaderSection } from "components/HeaderSection";
 import { PersonSection } from "./PersonSection";
 
 const AboutUs = () => {

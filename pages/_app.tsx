@@ -1,6 +1,6 @@
-import "../styles/globals.scss";
+import "styles/globals.scss";
 import type { AppProps } from "next/app";
-import Header from "../components/Header";
+import Header from "components/Header";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({

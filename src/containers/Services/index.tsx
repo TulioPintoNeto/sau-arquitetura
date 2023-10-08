@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { HeaderSection } from "../../components/HeaderSection";
-import Container from "../../components/Container";
+import { HeaderSection } from "components/HeaderSection";
+import Container from "components/Container";
 
 export function Services() {
   return (

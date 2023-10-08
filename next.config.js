@@ -4,7 +4,7 @@ const path = require("path");
 const nextConfig = {
     reactStrictMode: true,
     sassOptions: {
-        includePaths: [path.resolve(__dirname, "./styles")],
+        includePaths: [path.resolve(__dirname, "./src/styles")],
     },
 };
 

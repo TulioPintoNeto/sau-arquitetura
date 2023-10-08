@@ -1,6 +1,6 @@
-import Container from "../../components/Container";
+import Container from "components/Container";
+import { HeaderSection } from 'components/HeaderSection/index';
 import styles from "./styles.module.scss";
-import { HeaderSection } from '../../components/HeaderSection/index';
 
 const HomeMain = () => {
   return (

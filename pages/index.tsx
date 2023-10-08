@@ -1,8 +1,8 @@
 import Head from "next/head";
-import HomeMain from "../containers/HomeMain/index";
-import CallUs from "./../components/CallUs/index";
-import AboutUs from "../containers/AboutUs/index";
-import { Services } from "../containers/Services";
+import HomeMain from "containers/HomeMain/index";
+import CallUs from "components/CallUs/index";
+import AboutUs from "containers/AboutUs/index";
+import { Services } from "containers/Services";
 
 export default function Home() {
     return (
