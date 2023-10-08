@@ -11,6 +11,7 @@ $services-bg-color: map.get($secondary-colors, '200');
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 240px);
+  margin-top: 64px;
 
   & > div {
     position: relative;

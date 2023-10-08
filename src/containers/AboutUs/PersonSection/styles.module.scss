@@ -11,22 +11,14 @@
 
 .imageBox {
   position: relative;
-  height: 109px;
+  height: 320px;
 
-  @include md {
-    height: 159px;
-  }
-
-  @include lg {
-    height: 225px;
+  & img {
+    object-fit: cover;
   }
 
   @include xl {
-    height: 275px;
-  }
-
-  @include xxl {
-    height: 325px;
+    height: 320px;
   }
 }
 

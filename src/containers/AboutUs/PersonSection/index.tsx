@@ -13,7 +13,7 @@ interface Props {
 
 export function PersonSection({ alt, description, name, reversed = false, src }: Props) {
   return (
-    <div
+    <section
       className={CN(styles.column, {
         [styles.reversed]: reversed,
       })}
@@ -25,6 +25,6 @@ export function PersonSection({ alt, description, name, reversed = false, src }:
         <p>{name}</p>
         <p>{description}</p>
       </div>
-    </div>
+    </section>
   );
 }
