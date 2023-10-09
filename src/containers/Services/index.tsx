@@ -7,7 +7,7 @@ import { ServiceSection } from "./ServiceSection";
 
 export function Services() {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id="servicos">
       <Container verticalPadding>
         <HeaderSection center title="Serviços" text="Estes são nossos" />
         <div className={styles.grid}>
