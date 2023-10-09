@@ -30,11 +30,11 @@ export function Footer() {
               <address>
                 Parque Una Pelotas,
                 <br />
-                Av. Dois, Plex Hub Corporativo
+                Av. Dois, n°100 Plex Hub Corporativo
                 <br />
                 Sala 509, Areal
                 <br />
-                Pelotas - RS - 96075-166
+                Pelotas - RS - 96075-160
                 <br />
               </address>
               <div>
