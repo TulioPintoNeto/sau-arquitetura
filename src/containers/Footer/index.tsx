@@ -4,9 +4,9 @@ import Container from "src/components/Container";
 import { Logo } from "src/components/Logo";
 import { Row } from "src/components/Row";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import IconButton from "@mui/material/IconButton";
 
 export function Footer() {
@@ -19,10 +19,12 @@ export function Footer() {
             <section>
               <h2>Sobre nós</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
+                Somos comprometidos com a excelência arquitetônica, priorizando
+                o bem-estar, qualidade e segurança em nossos projetos e obras.
+                Acreditamos no impacto positivo de espaços bem concebidos e
+                construídos, colaborando com nossos clientes e abrangendo todos
+                os campos da arquitetura e construção civil. Somos Arquitetura e
+                Urbanismo.
               </p>
             </section>
             <div className={styles.column}>
@@ -38,13 +40,22 @@ export function Footer() {
                 <br />
               </address>
               <div>
-                <IconButton href="https://www.instagram.com/sau.arquitetura/" target="_blank">
+                <IconButton
+                  href="https://www.instagram.com/sau.arquitetura/"
+                  target="_blank"
+                >
                   <InstagramIcon />
                 </IconButton>
-                <IconButton href="https://api.whatsapp.com/send?phone=5553981505549" target="_blank">
+                <IconButton
+                  href="https://api.whatsapp.com/send?phone=5553981505549"
+                  target="_blank"
+                >
                   <WhatsAppIcon />
                 </IconButton>
-                <IconButton href="mailto:sau.arquitetura@gmail.com" target="_blank">
+                <IconButton
+                  href="mailto:sau.arquitetura@gmail.com"
+                  target="_blank"
+                >
                   <MailOutlineIcon />
                 </IconButton>
                 <IconButton href="tel:+5553981505549" target="_blank">

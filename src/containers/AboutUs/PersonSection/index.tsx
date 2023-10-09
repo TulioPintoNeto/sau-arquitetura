@@ -5,13 +5,19 @@ import CN from "classnames";
 
 interface Props {
   alt: string;
-  description: string;
+  descriptions: string[];
   name: string;
   src: string;
   reversed?: boolean;
 }
 
-export function PersonSection({ alt, description, name, reversed = false, src }: Props) {
+export function PersonSection({
+  alt,
+  descriptions,
+  name,
+  reversed = false,
+  src,
+}: Props) {
   return (
     <section
       className={CN(styles.column, {
@@ -23,7 +29,22 @@ export function PersonSection({ alt, description, name, reversed = false, src }:
       </div>
       <div className={styles.textBox}>
         <p>{name}</p>
-        <p>{description}</p>
+        <p>
+          {descriptions.map((description, index) => {
+            const isFirst = index === 0;
+
+            if (isFirst) {
+              return description;
+            }
+
+            return (
+              <>
+                <br />
+                {description}
+              </>
+            );
+          })}
+        </p>
       </div>
     </section>
   );

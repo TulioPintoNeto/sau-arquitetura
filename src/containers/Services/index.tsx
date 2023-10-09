@@ -13,36 +13,36 @@ export function Services() {
         <div className={styles.grid}>
           <div>
             <Image
-              alt="a imagem mostra um computador aberto em um software para realizar projetos de arquitetura"
+              alt="foto preto e branca dos braços com tatuagem de um homem fazendo um esboço arquitetônico em um papel"
               fill
-              src="/computador-projeto.png"
+              src="/projetar.png"
             />
           </div>
           <ServiceSection
-            title="Consultoria"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            title="Regularização de Imóveis"
+            description="A regularização de imóveis é o procedimento legal para comprovar a existência e legalidade de uma propriedade, obtendo a documentação adequada, essencial para a segurança jurídica e valorização do imóvel."
           />
           <div>
             <Image
-              alt="um homem trabalhando em uma obra com cimento e tijolos"
+              alt="foto preto e branca de uma construção em andamento de um galpão ainda destelhado e com o muro pela metade"
               fill
-              src="/construcao.png"
+              src="/obra.png"
             />
           </div>
-          <ServiceSection
-            title="Planejar"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          <ServiceSection 
+            title="Projetos de Arquitetura"
+            description="O projeto arquitetônico e de interiores envolvem planos e informações técnicas para conceber e organizar espaços, considerando funcionalidade, estética e segurança. São fundamentais na construção ou renovação, abrangendo materiais, mobiliário, decoração, iluminação e instalações."
           />
           <div>
             <Image
-              alt="um homem branco e uma mulher negra apertando as mãos"
+              alt="foto preta e branca de um homem com tatuagens trabalhando em um notebook"
               fill
-              src="/consultoria.png"
+              src="/regularizar.png"
             />
           </div>
           <ServiceSection
-            title="Construir"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            title="Execução de Obras"
+            description="Envolvimento na construção de edifícios que incluem desde etapas como terraplenagem, fundação, estruturação, acabamento e instalações elétricas e hidráulicas."
           />
         </div>
       </Container>

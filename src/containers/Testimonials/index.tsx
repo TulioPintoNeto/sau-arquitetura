@@ -15,8 +15,8 @@ export function Testimonials() {
             text="Nossos clientes deram seus"
           />
           <Testimonial
-            person="Antonio da Silva"
-            testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            person="Matheus Nunes, Ventura Imóveis"
+            testimonial="A SAU para mim é sinônimo de confiança. Não somente por ter como amigo um dos sócios, mas por conhecer de perto a qualidade e a seriedade do serviço que prestam. Acompanhar o crescimento e desenvolvimento da empresa e ter a assinatura da empresa no nosso projeto é uma alegria e uma tranquilidade."
           />
         </Row>
         <Row>
