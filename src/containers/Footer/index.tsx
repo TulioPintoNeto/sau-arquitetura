@@ -38,16 +38,16 @@ export function Footer() {
                 <br />
               </address>
               <div>
-                <IconButton href="https://www.instagram.com/sau.arquitetura/">
+                <IconButton href="https://www.instagram.com/sau.arquitetura/" target="_blank">
                   <InstagramIcon />
                 </IconButton>
-                <IconButton href="https://api.whatsapp.com/send?phone=5553981505549">
+                <IconButton href="https://api.whatsapp.com/send?phone=5553981505549" target="_blank">
                   <WhatsAppIcon />
                 </IconButton>
-                <IconButton href="mailto:sau.arquitetura@gmail.com">
+                <IconButton href="mailto:sau.arquitetura@gmail.com" target="_blank">
                   <MailOutlineIcon />
                 </IconButton>
-                <IconButton href="tel:+5553981505549">
+                <IconButton href="tel:+5553981505549" target="_blank">
                   <LocalPhoneIcon />
                 </IconButton>
               </div>

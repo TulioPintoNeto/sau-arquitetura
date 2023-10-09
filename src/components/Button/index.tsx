@@ -1,13 +1,10 @@
-import {
-  Button as MuiButton,
-  ButtonProps as MuiButtonProps,
-} from "@mui/material";
+import MuiButton, { ButtonProps as MuiButtonProps } from "@mui/material/Button";
 import CN from "classnames";
 import styles from "./styles.module.scss";
 
-type ButtonProps = MuiButtonProps & {
+interface ButtonProps extends MuiButtonProps {
   transparent?: boolean;
-};
+}
 
 const Button = ({ transparent, ...props }: ButtonProps) => {
   return (
