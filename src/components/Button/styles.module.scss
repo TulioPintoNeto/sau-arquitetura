@@ -1,11 +1,11 @@
 a,
 button {
-  .button {
+  &.button {
     font-family: var(--secondary-font);
     padding: 6px 16px;
   }
 
-  .transparent {
+  &.transparent {
     border: none;
     color: var(--font-primary-color);
 
