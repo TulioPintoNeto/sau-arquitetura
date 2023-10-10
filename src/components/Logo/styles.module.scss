@@ -1,3 +1,17 @@
+@import 'breakpoints';
+
 .imageBox {
-  padding: 24px 0;
+  margin: 24px 0;
+  width: 150px;
+  height: 37px;
+  position: relative;
+  
+  img {
+    object-fit: "contain";
+  }
+  
+  @include md {
+    width: 203px;
+    height: 50px;
+  }
 }
