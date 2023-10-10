@@ -21,7 +21,7 @@ $header-border-color: map.get($secondary-colors, "500");
   text-transform: uppercase;
 }
 
-.menuIcon {
+button.menuIcon {
   &.hide {
     display: none;
   }
