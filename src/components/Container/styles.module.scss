@@ -3,7 +3,7 @@
 .container {
     margin: 0 auto;
 
-    width: 540px;
+    width: calc(100% - 32px);
 
     @include md {
         width: 720px;
