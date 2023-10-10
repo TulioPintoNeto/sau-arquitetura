@@ -9,6 +9,7 @@ const HomeMain = () => {
         <Container>
           <div className={styles.constrainedBox}>
             <HeaderSection 
+              main
               text="Projetando e realizando sonhos"
               title="Arquitetura e Construção Civil em Pelotas"
             />

@@ -6,9 +6,15 @@ type Props = {
   title: string;
   text: string;
   center?: boolean;
+  main?: boolean;
 };
 
-export function HeaderSection({ center = false, title, text }: Props) {
+export function HeaderSection({
+  title,
+  text,
+  center = false,
+  main = false,
+}: Props) {
   return (
     <div
       className={CN(styles.headerSection, {
@@ -16,7 +22,7 @@ export function HeaderSection({ center = false, title, text }: Props) {
       })}
     >
       <p>{text}</p>
-      <h2>{title}</h2>
+      {main ? <h1>{title}</h1> : <h2>{title}</h2>}
     </div>
   );
 }

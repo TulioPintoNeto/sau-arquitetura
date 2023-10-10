@@ -1,12 +1,21 @@
 @use "sass:map";
 @import "colors";
+@import "breakpoints";
 
 $line-color: map.get($primary-colors, "500");
 $lineWidth: 88px;
 
 .headerSection {
-  h2 {
-    font-size: 4rem;
+  h1, h2 {
+    font-size: 2rem;
+
+    @include sm {
+      font-size: 3rem;
+    }
+
+    @include md {
+      font-size: 4rem;
+    }
   }
 
   p {
@@ -21,7 +30,7 @@ $lineWidth: 88px;
       background-color: $line-color;
       position: absolute;
       bottom: -16px;
-      left: -30px;
+      left: -32px;
     }
   }
 
