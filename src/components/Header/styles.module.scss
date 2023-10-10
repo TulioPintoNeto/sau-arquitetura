@@ -1,47 +1,64 @@
 @use "sass:map";
-@import "colors.scss";
+@import "breakpoints";
+@import "colors";
 
 $header-border-color: map.get($secondary-colors, "500");
 
 .header {
-    position: absolute;
-    width: 100%;
-    top: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 .row {
-    align-items: center;
-    display: flex;
-    font-size: 0.875rem;
-    font-family: var(--secondary-font);
-    font-weight: 500;
-    justify-content: space-between;
-    position: relative;
-    text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  justify-content: space-between;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button.menuIcon {
+  &.hide {
+    display: none;
+  }
+
+  @include md {
+    display: none;
+  }
 }
 
 .menu {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: none;
 
-    & > * {
-      margin: 0 8px;
-    }
+  @include md {
+    display: flex;
+  }
+
+  & > * {
+    margin: 0 8px;
+  }
 }
 
 .menu > div {
-    margin-left: 48px;
+  margin-left: 48px;
 }
 
 .menuButton:hover {
   background: rgba(#222, 0.1);
 }
 
-.secondItemsBox {
-    display: flex;
-    justify-content: flex-end;
-}
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px;
+  position: relative;
 
-.secondItemsBox > div {
-    margin-left: 64px;
+  & > * {
+    margin-bottom: 16px;
+  }
 }

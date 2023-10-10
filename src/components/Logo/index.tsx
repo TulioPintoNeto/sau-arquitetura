@@ -8,8 +8,8 @@ export function Logo() {
       <Image
         src="/sau-logo.png"
         alt="Logo da SAU - Somos Arquitetura e Urbanismo"
-        height="50"
-        width="203"
+        fill
+        sizes="(max-width: 767px) 150px, 203px"
       />
     </div>
   );
