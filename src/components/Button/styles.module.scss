@@ -1,13 +1,16 @@
-a.button {
-  font-family: var(--secondary-font);
-  padding: 6px 16px;
-}
+a,
+button {
+  &.button {
+    font-family: var(--secondary-font);
+    padding: 6px 16px;
+  }
 
-.transparent {
-  border: none;
-  color: var(--font-primary-color);
+  &.transparent {
+    border: none;
+    color: var(--font-primary-color);
 
-  &:hover {
+    &:hover {
       background: rgba(#222, 0.2);
+    }
   }
 }
