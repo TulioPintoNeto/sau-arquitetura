@@ -1,5 +1,6 @@
 @use "sass:map";
 @import "colors";
+@import "breakpoints";
 
 .footer {
   background: url("/background-footer.png");
@@ -32,4 +33,12 @@
 
 .row {
   align-items: flex-start;
+
+  & > *:first-child {
+    margin-bottom: 32px;
+
+    @include md {
+      margin-bottom: 0;
+    }
+  }
 }
