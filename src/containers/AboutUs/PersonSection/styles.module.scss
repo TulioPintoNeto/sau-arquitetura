@@ -5,20 +5,31 @@
   flex-direction: column;
 
   &.reversed {
-    flex-direction: column-reverse;
+    flex-direction: column;
+
+    @include md {
+      flex-direction: column-reverse;
+    }
   }
 }
 
 .imageBox {
   position: relative;
-  height: 320px;
-
+  height: 385px;
+  margin: 0 auto;
+  width: 330px;
+  
   & img {
     object-fit: cover;
   }
+  
+  @include md {
+    height: 380px;
+    width: 100%;
+  }
 
   @include xl {
-    height: 320px;
+    height: 460px;
   }
 }
 

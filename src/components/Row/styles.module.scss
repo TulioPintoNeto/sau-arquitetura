@@ -1,10 +1,17 @@
+@import "breakpoints";
+
 .row {
   align-items: center;
   display: flex;
-  margin: 0 -36px;
-
-  & > * {
+  flex-direction: column;
+  
+  @include md {
+    flex-direction: row;
+    margin: 0 -36px;
+    
+    & > * {
       flex: 1;
-      padding: 0 36px;
+      margin: 0 18px;
+    }
   }
 }
