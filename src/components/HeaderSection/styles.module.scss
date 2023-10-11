@@ -5,8 +5,18 @@
 $line-color: map.get($primary-colors, "500");
 $lineWidth: 88px;
 
+@mixin centered {
+  text-align: center;
+
+  & p::after {
+    bottom: -24px;
+    left: calc(50% - $lineWidth / 2);
+  }
+}
+
 .headerSection {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 2rem;
 
     @include sm {
@@ -34,12 +44,22 @@ $lineWidth: 88px;
     }
   }
 
-  &.center {
-    text-align: center;
+  &:not(.main) {
+    @include centered;
+    margin-bottom: 32px;
 
-    & p::after {
-      bottom: -24px;
-      left: calc(50% - $lineWidth / 2);
+    @include md {
+      margin-bottom: 0;
+      text-align: left;
+
+      & p::after {
+        bottom: -16px;
+        left: -32px;
+      }
+
+      &.center {
+        @include centered;
+      }
     }
   }
 }

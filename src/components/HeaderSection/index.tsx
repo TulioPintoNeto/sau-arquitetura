@@ -18,6 +18,7 @@ export function HeaderSection({
   return (
     <div
       className={CN(styles.headerSection, {
+        [styles.main]: main,
         [styles.center]: center,
       })}
     >

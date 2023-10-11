@@ -1,7 +1,8 @@
-@use 'sass:map';
-@import 'colors';
+@use "sass:map";
+@import "colors";
+@import "breakpoints";
 
-$services-bg-color: map.get($secondary-colors, '200');
+$services-bg-color: map.get($secondary-colors, "200");
 
 .services {
   background-color: $services-bg-color;
@@ -9,9 +10,16 @@ $services-bg-color: map.get($secondary-colors, '200');
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 240px);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 240px);
   margin-top: 64px;
+  grid-template-areas: 
+    "project-img"
+    "project"
+    "regulate-img"
+    "regulate"
+    "work-img"
+    "work";
 
   & > div {
     position: relative;
@@ -20,4 +28,36 @@ $services-bg-color: map.get($secondary-colors, '200');
   & img {
     object-fit: cover;
   }
+
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 240px);
+    grid-template-areas: 
+      "project-img regulate work-img"
+      "project regulate-img work";
+  }
+}
+
+.projectImg {
+  grid-area: project-img;
+}
+
+.workImg {
+  grid-area: work-img;
+}
+
+.regulateImg {
+  grid-area: regulate-img;
+}
+
+.project {
+  grid-area: project;
+}
+
+.work {
+  grid-area: work;
+}
+
+.regulate {
+  grid-area: regulate;
 }

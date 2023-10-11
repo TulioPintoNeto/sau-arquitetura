@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./styles.module.scss";
 import CN from "classnames";
 
@@ -38,10 +38,10 @@ export function PersonSection({
             }
 
             return (
-              <>
+              <Fragment key={description}>
                 <br />
                 {description}
-              </>
+              </Fragment>
             );
           })}
         </p>
