@@ -13,7 +13,7 @@ export function Testimonials() {
         <Row className={styles.rowMarginBottom}>
           <HeaderSection
             title="Depoimentos"
-            text="Nossos clientes deram seus"
+            text="Confira alguns"
           />
           <Testimonial
             person={
