@@ -1,0 +1,17 @@
+@import "breakpoints";
+
+.row {
+  margin: 0 -56px;
+
+  & > * {
+    margin: 0 56px;
+  }
+
+  & > *:last-child {
+    margin-top: 32px;
+
+    @include lg {
+      margin-top: 0;
+    }
+  }
+}

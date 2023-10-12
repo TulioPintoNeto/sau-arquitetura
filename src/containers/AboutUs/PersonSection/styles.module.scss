@@ -1,4 +1,4 @@
-@import 'breakpoints';
+@import "breakpoints";
 
 .column {
   display: flex;
@@ -6,8 +6,10 @@
 
   &.reversed {
     flex-direction: column;
+  }
 
-    @include md {
+  @include lg {
+    &.reversed {
       flex-direction: column-reverse;
     }
   }
@@ -18,12 +20,12 @@
   height: 385px;
   margin: 0 auto;
   width: 330px;
-  
+
   & img {
     object-fit: cover;
   }
-  
-  @include md {
+
+  @include lg {
     height: 380px;
     width: 100%;
   }
@@ -46,4 +48,8 @@
     font-size: 0.875rem;
     line-height: 26px;
   }
+}
+
+.description {
+  text-align: justify;
 }

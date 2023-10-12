@@ -11,7 +11,7 @@ $services-bg-color: map.get($secondary-colors, "200");
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 240px);
+  grid-template-rows: repeat(6, 280px);
   margin-top: 64px;
   grid-template-areas: 
     "project-img"

@@ -8,58 +8,65 @@ $lineWidth: 88px;
 @mixin centered {
   text-align: center;
 
-  & p::after {
+  & .complementaryText::after {
     bottom: -24px;
     left: calc(50% - $lineWidth / 2);
   }
 }
 
-.headerSection {
-  h1,
-  h2 {
-    font-size: 2rem;
+@mixin left-aligned {
+  margin-bottom: 0;
+  text-align: left;
 
-    @include sm {
-      font-size: 3rem;
-    }
-
-    @include md {
-      font-size: 4rem;
-    }
+  & .complementaryText::after {
+    bottom: -16px;
+    left: -32px;
   }
+}
 
-  p {
-    font-weight: 700;
-    margin-bottom: 40px;
-    position: relative;
-
-    &::after {
-      content: "";
-      width: $lineWidth;
-      height: 4px;
-      background-color: $line-color;
-      position: absolute;
-      bottom: -16px;
-      left: -32px;
-    }
+.headerSection {
+  &.main {
+    @include left-aligned;
   }
 
   &:not(.main) {
     @include centered;
     margin-bottom: 32px;
 
-    @include md {
-      margin-bottom: 0;
-      text-align: left;
+    &.lg {
+      @include lg {
+        @include left-aligned;
 
-      & p::after {
-        bottom: -16px;
-        left: -32px;
-      }
-
-      &.center {
-        @include centered;
+        &.center {
+          @include centered;
+        }
       }
     }
+  }
+}
+
+.title {
+  font-size: 2rem;
+
+  @include sm {
+    font-size: 3rem;
+  }
+
+  @include md {
+    font-size: 4rem;
+  }
+}
+
+.complementaryText {
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: $lineWidth;
+    height: 4px;
+    background-color: $line-color;
+    position: absolute;
   }
 }

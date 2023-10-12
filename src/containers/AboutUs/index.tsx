@@ -2,12 +2,13 @@ import Container from "components/Container/index";
 import { HeaderSection } from "components/HeaderSection";
 import { PersonSection } from "./PersonSection";
 import { Row } from "src/components/Row";
+import styles from "./styles.module.scss";
 
 const AboutUs = () => {
   return (
     <section id="sobre">
       <Container verticalPadding>
-        <Row>
+        <Row className={styles.row}>
           <div>
             <HeaderSection text="Algumas palavras" title="Sobre nós" />
           </div>
