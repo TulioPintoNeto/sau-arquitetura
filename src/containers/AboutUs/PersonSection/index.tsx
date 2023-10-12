@@ -29,7 +29,7 @@ export function PersonSection({
       </div>
       <div className={styles.textBox}>
         <p>{name}</p>
-        <p>
+        <p className={styles.description}>
           {descriptions.map((description, index) => {
             const isFirst = index === 0;
 
