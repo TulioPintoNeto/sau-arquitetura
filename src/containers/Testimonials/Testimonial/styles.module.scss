@@ -27,7 +27,7 @@ $link-color: map.get($primary-colors, "500");
   font-family: var(--secondary-font);
   margin-bottom: 48px;
 
-  @include md {
+  @include lg {
     margin-bottom: 0;
   }
 }

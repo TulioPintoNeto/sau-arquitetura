@@ -37,7 +37,7 @@
   & > *:first-child {
     margin-bottom: 32px;
 
-    @include md {
+    @include lg {
       margin-bottom: 0;
     }
   }

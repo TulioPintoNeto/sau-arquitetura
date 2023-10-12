@@ -22,8 +22,12 @@ export function HeaderSection({
         [styles.center]: center,
       })}
     >
-      <p>{text}</p>
-      {main ? <h1>{title}</h1> : <h2>{title}</h2>}
+      <p className={styles.complementaryText}>{text}</p>
+      {main ? (
+        <h1 className={styles.title}>{title}</h1>
+      ) : (
+        <h2 className={styles.title}>{title}</h2>
+      )}
     </div>
   );
 }
