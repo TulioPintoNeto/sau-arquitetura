@@ -16,7 +16,14 @@ export function Testimonials() {
             text="Nossos clientes deram seus"
           />
           <Testimonial
-            person="Matheus Nunes. Ventura Imóveis"
+            person={
+              <div>
+                Matheus Nunes.{" "}
+                <Link href="https://www.imoveisventura.com.br/" target="_blank">
+                  Ventura Imóveis
+                </Link>
+              </div>
+            }
             testimonial="A SAU para mim é sinônimo de confiança. Não somente por ter como amigo um dos sócios, mas por conhecer de perto a qualidade e a seriedade do serviço que prestam. Acompanhar o crescimento e desenvolvimento da empresa e ter a assinatura da empresa no nosso projeto é uma alegria e uma tranquilidade."
           />
         </Row>
