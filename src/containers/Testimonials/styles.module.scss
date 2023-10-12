@@ -1,3 +1,7 @@
-// .rowMarginBottom {
-//     margin-bottom: 160px;
-// }
+@import "breakpoints";
+
+.rowMarginBottom {
+  @include md {
+    margin-bottom: 160px;
+  }
+}

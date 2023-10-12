@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './styles.module.scss';
 
 interface Props {
   person: string;
-  testimonial: string;
+  testimonial: ReactNode;
 }
 
 export function Testimonial({

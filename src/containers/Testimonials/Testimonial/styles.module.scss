@@ -1,21 +1,33 @@
 @use "sass:map";
 @import "colors";
+@import "breakpoints";
 
 $person-color: map.get($primary-colors, "500");
+$link-color: map.get($primary-colors, "500");
 
-.tertimonialSection {
+.testimonialSection {
   display: flex;
   flex-direction: column;
+
+  a {
+    color: $link-color;
+    text-decoration: underline
+  }
 }
 
 .testimonial {
   font-size: 1.05rem;
   line-height: 1.8rem;
-  margin-bottom: 1.7rem;
+  margin-bottom: 16px;
 }
 
 .person {
   color: $person-color;
   font-size: 0.88rem;
   font-family: var(--secondary-font);
+  margin-bottom: 48px;
+
+  @include md {
+    margin-bottom: 0;
+  }
 }
