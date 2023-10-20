@@ -15,7 +15,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Descubra a excelência da arquitetura em Pelotas com o talento do nosso arquiteto. Transforme seus sonhos em projetos de tirar o fôlego. Explore nossas criações únicas e inovadoras."
+          content="Descubra a excelência da arquitetura em Pelotas com o talento de nossos arquitetos. Transforme seus sonhos em projetos de tirar o fôlego. Explore nossas criações únicas e inovadoras."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
