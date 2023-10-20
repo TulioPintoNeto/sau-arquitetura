@@ -23,13 +23,16 @@ export function PersonSection({
       className={CN(styles.column, {
         [styles.reversed]: reversed,
       })}
+      itemProp="founder"
+      itemScope
+      itemType="http://schema.org/Person"
     >
       <div className={styles.imageBox}>
-        <Image alt={alt} src={src} fill />
+        <Image alt={alt} itemProp="image" src={src} fill />
       </div>
       <div className={styles.textBox}>
-        <p>{name}</p>
-        <p className={styles.description}>
+        <p itemProp="name">{name}</p>
+        <p className={styles.description} itemProp="description">
           {descriptions.map((description, index) => {
             const isFirst = index === 0;
 

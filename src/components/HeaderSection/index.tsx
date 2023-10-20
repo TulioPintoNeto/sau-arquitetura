@@ -7,6 +7,7 @@ type Props = {
   text: string;
   center?: boolean;
   main?: boolean;
+  titleItemProp?: string;
 };
 
 export function HeaderSection({
@@ -14,6 +15,7 @@ export function HeaderSection({
   text,
   center = false,
   main = false,
+  titleItemProp,
 }: Props) {
   return (
     <div
@@ -24,9 +26,9 @@ export function HeaderSection({
     >
       <p className={styles.complementaryText}>{text}</p>
       {main ? (
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title} itemProp={titleItemProp}>{title}</h1>
       ) : (
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title} itemProp={titleItemProp}>{title}</h2>
       )}
     </div>
   );

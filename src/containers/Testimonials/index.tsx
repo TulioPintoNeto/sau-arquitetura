@@ -11,27 +11,42 @@ export function Testimonials() {
     <section id="depoimentos">
       <Container verticalPadding>
         <Row className={styles.rowMarginBottom}>
-          <HeaderSection
-            title="Depoimentos"
-            text="Confira alguns"
-          />
+          <HeaderSection title="Depoimentos" text="Confira alguns" />
           <Testimonial
             person={
-              <div>
-                Matheus Nunes.{" "}
-                <Link href="https://www.imoveisventura.com.br/" target="_blank">
+              <span
+                itemProp="author"
+                itemScope
+                itemType="http://schema.org/Organization"
+              >
+                <span itemProp="founder">Matheus Nunes</span>.{" "}
+                <Link
+                  itemProp="name"
+                  href="https://www.imoveisventura.com.br/"
+                  target="_blank"
+                >
                   Ventura Imóveis
                 </Link>
-              </div>
+              </span>
             }
             testimonial="A SAU para mim é sinônimo de confiança. Não somente por ter como amigo um dos sócios, mas por conhecer de perto a qualidade e a seriedade do serviço que prestam. Acompanhar o crescimento e desenvolvimento da empresa e ter a assinatura da empresa no nosso projeto é uma alegria e uma tranquilidade."
           />
         </Row>
         <Row>
           <Testimonial
-            person="Gabriel Bilhalba e Rafael Weber. Ciclo Eletricidade"
+            person={
+              <span
+                itemProp="author"
+                itemScope
+                itemType="http://schema.org/Organization"
+              >
+                <span itemProp="founder">Gabriel Bilhalba</span> e{" "}
+                <span itemProp="founder">Rafael Weber</span>.{" "}
+                <span itemProp="name">Ciclo Eletricidade</span>
+              </span>
+            }
             testimonial={
-              <div>
+              <>
                 A SAU ficou responsável por materializar o espírito da{" "}
                 <Link href="https://cicloeletricidade.com/" target="_blank">
                   Ciclo Eletricidade e Energia
@@ -40,7 +55,7 @@ export function Testimonials() {
                 trabalho estampado em nosso escritório. O resultado surpreendeu
                 a todos positivamente, desde o projeto até a entrega da obra.
                 Agradecemos o empenho da SAU em todo o processo.
-              </div>
+              </>
             }
           />
           {/* <Testimonial
