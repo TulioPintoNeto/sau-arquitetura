@@ -58,10 +58,21 @@ export function Testimonials() {
               </>
             }
           />
-          {/* <Testimonial
-            person="Antonio da Silva"
-            testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-          /> */}
+          <Testimonial
+            person={
+              <>
+                <span
+                  itemProp="author"
+                  itemScope
+                  itemType="http://schema.org/Person"
+                >
+                  <span itemProp="name">Thiago Oliveira</span>
+                </span>
+                . Servente
+              </>
+            }
+            testimonial="Trabalhar na SAU é estar diariamente com grandes profissionais responsáveis habilidosos para a execução de cada obra. Grato por fazer parte dessa equipe!"
+          />
         </Row>
       </Container>
     </section>
