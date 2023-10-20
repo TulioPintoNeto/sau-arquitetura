@@ -14,11 +14,11 @@ export function Footer() {
     <footer className={styles.footer}>
       <Container verticalPadding>
         <div className={styles.column}>
-          <Logo />
+          <Logo itemPropLogo />
           <Row className={styles.row}>
             <section>
               <h2>Sobre nós</h2>
-              <p>
+              <p itemProp="description">
                 Somos comprometidos com a excelência arquitetônica, priorizando
                 o bem-estar, qualidade e segurança em nossos projetos e obras.
                 Acreditamos no impacto positivo de espaços bem concebidos e
@@ -29,15 +29,18 @@ export function Footer() {
             </section>
             <div className={styles.column}>
               <h2>Onde você nos encontra</h2>
-              <address>
-                Parque Una Pelotas,
-                <br />
-                Av. Dois, n°100 Plex Hub Corporativo
-                <br />
-                Sala 509, Areal
-                <br />
-                Pelotas - RS - 96075-160
-                <br />
+              <address
+                itemProp="address"
+                itemScope
+                itemType="http://schema.org/PostalAddress"
+              >
+                <p>Parque Una Pelotas,</p>
+                <p>
+                  <span itemProp="streetAddress">Av. Dois, n°100</span> Plex Hub
+                  Corporativo
+                </p>
+                <p>Sala 509, Areal</p>
+                <p><span itemProp="addressLocality">Pelotas</span> - <span itemProp="addressRegion">RS</span> - <span itemProp="postalCode">96075-160</span></p>
               </address>
               <div>
                 <IconButton

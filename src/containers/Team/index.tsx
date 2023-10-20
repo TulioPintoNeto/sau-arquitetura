@@ -10,7 +10,7 @@ export function AboutUs() {
       <Container verticalPadding>
         <Row className={styles.row}>
           <div>
-            <HeaderSection text="Quem é a" title="SAU Arquitetura" />
+            <HeaderSection text="Quem é a" title="SAU Arquitetura" titleItemProp="name"/>
           </div>
           <div>
             <PersonSection
