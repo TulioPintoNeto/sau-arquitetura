@@ -14,7 +14,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <Container verticalPadding>
         <div className={styles.column}>
-          <Logo itemPropLogo />
+          <a itemProp="url" href="https://sauarquitetura.com.br"><Logo itemPropLogo /></a>
           <Row className={styles.row}>
             <section>
               <h2>Sobre nós</h2>

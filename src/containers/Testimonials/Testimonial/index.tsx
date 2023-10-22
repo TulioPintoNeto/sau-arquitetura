@@ -10,10 +10,9 @@ export function Testimonial({
  person, testimonial,
 }: Props) {
  return (
-   <section className={styles.testimonialSection} itemScope itemType="http://schema.org/Review">
-    <p className={styles.testimonial} itemProp="reviewBody">{testimonial}</p>
+   <section className={styles.testimonialSection}>
+    <p className={styles.testimonial}>{testimonial}</p>
     <p className={styles.person}>{person}</p>
-    <meta itemProp="datePublished" content="2023-10-12" />
    </section>
  );
 }

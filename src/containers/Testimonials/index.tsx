@@ -15,17 +15,16 @@ export function Testimonials() {
           <Testimonial
             person={
               <span
-                itemProp="author"
                 itemScope
                 itemType="http://schema.org/Organization"
               >
                 <span itemProp="founder">Matheus Nunes</span>.{" "}
                 <Link
-                  itemProp="name"
+                  itemProp="url"
                   href="https://www.imoveisventura.com.br/"
                   target="_blank"
                 >
-                  Ventura Imóveis
+                  <span itemProp="name">Ventura Imóveis</span>
                 </Link>
               </span>
             }
@@ -36,7 +35,6 @@ export function Testimonials() {
           <Testimonial
             person={
               <span
-                itemProp="author"
                 itemScope
                 itemType="http://schema.org/Organization"
               >
@@ -48,7 +46,11 @@ export function Testimonials() {
             testimonial={
               <>
                 A SAU ficou responsável por materializar o espírito da{" "}
-                <Link href="https://cicloeletricidade.com/" target="_blank">
+                <Link
+                  itemProp="url"
+                  href="https://cicloeletricidade.com/"
+                  target="_blank"
+                >
                   Ciclo Eletricidade e Energia
                 </Link>{" "}
                 em um projeto arquitetônico, onde nosso cliente veja nosso
@@ -62,7 +64,6 @@ export function Testimonials() {
             person={
               <>
                 <span
-                  itemProp="author"
                   itemScope
                   itemType="http://schema.org/Person"
                 >
