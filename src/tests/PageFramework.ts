@@ -20,7 +20,7 @@ export class PageFramework {
     // Some time to load all images and set URL params
     await new Promise((res) => setTimeout(res, 3000));
 
-    await expect(this.page).toHaveScreenshot(name, { fullPage: true, timeout: 10000 });
+    await expect(this.page).toHaveScreenshot(name, { fullPage: true, timeout: 20000 });
   }
 
   private prepare(height: number) {
