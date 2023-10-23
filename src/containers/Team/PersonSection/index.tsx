@@ -1,7 +1,7 @@
-import Image from "next/image";
 import React, { Fragment } from "react";
 import styles from "./styles.module.scss";
 import CN from "classnames";
+import { Img } from "src/components/Img";
 
 interface Props {
   alt: string;
@@ -28,7 +28,7 @@ export function PersonSection({
       itemType="http://schema.org/Person"
     >
       <div className={styles.imageBox}>
-        <Image alt={alt} itemProp="image" src={src} fill />
+        <Img alt={alt} itemProp="image" src={src} fill />
       </div>
       <div className={styles.textBox}>
         <p itemProp="name">{name}</p>

@@ -15,17 +15,16 @@ export function Testimonials() {
           <Testimonial
             person={
               <span
-                itemProp="author"
                 itemScope
                 itemType="http://schema.org/Organization"
               >
                 <span itemProp="founder">Matheus Nunes</span>.{" "}
                 <Link
-                  itemProp="name"
+                  itemProp="url"
                   href="https://www.imoveisventura.com.br/"
                   target="_blank"
                 >
-                  Ventura Imóveis
+                  <span itemProp="name">Ventura Imóveis</span>
                 </Link>
               </span>
             }
@@ -36,7 +35,6 @@ export function Testimonials() {
           <Testimonial
             person={
               <span
-                itemProp="author"
                 itemScope
                 itemType="http://schema.org/Organization"
               >
@@ -48,7 +46,11 @@ export function Testimonials() {
             testimonial={
               <>
                 A SAU ficou responsável por materializar o espírito da{" "}
-                <Link href="https://cicloeletricidade.com/" target="_blank">
+                <Link
+                  itemProp="url"
+                  href="https://cicloeletricidade.com/"
+                  target="_blank"
+                >
                   Ciclo Eletricidade e Energia
                 </Link>{" "}
                 em um projeto arquitetônico, onde nosso cliente veja nosso
@@ -58,10 +60,20 @@ export function Testimonials() {
               </>
             }
           />
-          {/* <Testimonial
-            person="Antonio da Silva"
-            testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-          /> */}
+          <Testimonial
+            person={
+              <>
+                <span
+                  itemScope
+                  itemType="http://schema.org/Person"
+                >
+                  <span itemProp="name">Thiago Oliveira</span>
+                </span>
+                . Servente
+              </>
+            }
+            testimonial="Trabalhar na SAU é estar diariamente com grandes profissionais responsáveis habilidosos para a execução de cada obra. Grato por fazer parte dessa equipe!"
+          />
         </Row>
       </Container>
     </section>

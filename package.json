@@ -1,12 +1,15 @@
 {
   "name": "sau-arquitetura",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "test": "npx playwright test",
+    "test:update": "npx playwright test --update-snapshots"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -25,5 +28,9 @@
     "react-dom": "18.2.0",
     "sass": "^1.57.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "husky": "^8.0.0"
   }
 }

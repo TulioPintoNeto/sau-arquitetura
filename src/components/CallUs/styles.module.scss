@@ -1,5 +1,6 @@
 @use "sass:map";
-@import "colors.scss";
+@import "breakpoints";
+@import "colors";
 
 .callUs {
     align-items: center;
@@ -7,13 +8,18 @@
     bottom: 16px;
     border-radius: 4px;
     color: var(--font-secondary-color);
-    display: flex;
     font-size: 0.84rem;
     justify-content: space-between;
     left: 20%;
     padding: 8px 16px;
     position: fixed;
     width: 60%;
+
+    display: none;
+
+    @include lg {
+        display: flex;
+    }
 }
 
 .callUs .button {
