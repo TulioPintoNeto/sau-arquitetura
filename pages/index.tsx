@@ -6,6 +6,7 @@ import { Services } from "containers/Services";
 import { Testimonials } from "src/containers/Testimonials";
 import { Footer } from "src/containers/Footer";
 import Script from "next/script";
+import styles from "styles/pages/home.module.scss";
 
 function AnalyticsTag() {
   return (
@@ -42,7 +43,11 @@ export default function Home() {
       <AnalyticsTag />
       <main>
         <div itemScope itemType="http://schema.org/Organization">
-          <HomeMain />
+          <HomeMain
+            backgroundClassName={styles.background}
+            text="Projetando e realizando sonhos"
+            title="Arquitetura e Construção Civil em Pelotas"
+          />
           <Team />
           <Services />
           <Testimonials />

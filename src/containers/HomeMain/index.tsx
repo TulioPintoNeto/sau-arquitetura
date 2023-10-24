@@ -1,13 +1,20 @@
 import Container from "components/Container";
+import CN from 'classnames';
 import { HeaderSection } from "components/HeaderSection/index";
 import styles from "./styles.module.scss";
 import { useHomeMainHeight } from "src/hooks/useHomeMainHeight";
 
-const HomeMain = () => {
+interface Props {
+  backgroundClassName: string;
+  text: string;
+  title: string;
+}
+
+const HomeMain = ({ backgroundClassName, text, title }: Props) => {
   const height = useHomeMainHeight();
 
   return (
-    <div className={styles.background} style={{ height }}>
+    <div className={CN(styles.background, backgroundClassName)} style={{ height }}>
       <div className={styles.mainSectionBox} style={{ height }}>
         <Container>
           <div className={styles.constrainedBox}>
