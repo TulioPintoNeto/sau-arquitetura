@@ -9,16 +9,28 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import IconButton from "@mui/material/IconButton";
 
-export function Footer() {
+interface Props {
+  includesMicrodata?: boolean;
+}
+
+export function Footer({ includesMicrodata = false }: Props) {
+  const withMicrodata = (microData: string) =>
+    includesMicrodata ? microData : undefined;
+
   return (
     <footer className={styles.footer}>
       <Container verticalPadding>
         <div className={styles.column}>
-          <a itemProp="url" href="https://sauarquitetura.com.br"><Logo itemPropLogo /></a>
+          <a
+            itemProp={withMicrodata("url")}
+            href="https://sauarquitetura.com.br"
+          >
+            <Logo itemPropLogo={includesMicrodata} />
+          </a>
           <Row className={styles.row}>
             <section>
               <h2>Sobre nós</h2>
-              <p itemProp="description">
+              <p itemProp={withMicrodata("description")}>
                 Somos comprometidos com a excelência arquitetônica, priorizando
                 o bem-estar, qualidade e segurança em nossos projetos e obras.
                 Acreditamos no impacto positivo de espaços bem concebidos e
@@ -30,17 +42,25 @@ export function Footer() {
             <div className={styles.column}>
               <h2>Onde você nos encontra</h2>
               <address
-                itemProp="address"
-                itemScope
-                itemType="http://schema.org/PostalAddress"
+                itemProp={withMicrodata("address")}
+                itemScope={includesMicrodata}
+                itemType={withMicrodata("http://schema.org/PostalAddress")}
               >
                 <p>Parque Una Pelotas,</p>
                 <p>
-                  <span itemProp="streetAddress">Av. Dois, n°100</span> Plex Hub
-                  Corporativo
+                  <span itemProp={withMicrodata("streetAddress")}>
+                    Av. Dois, n°100
+                  </span>{" "}
+                  Plex Hub Corporativo
                 </p>
                 <p>Sala 509, Areal</p>
-                <p><span itemProp="addressLocality">Pelotas</span> - <span itemProp="addressRegion">RS</span> - <span itemProp="postalCode">96075-160</span></p>
+                <p>
+                  <span itemProp={withMicrodata("addressLocality")}>
+                    Pelotas
+                  </span>{" "}
+                  - <span itemProp={withMicrodata("addressRegion")}>RS</span> -{" "}
+                  <span itemProp={withMicrodata("postalCode")}>96075-160</span>
+                </p>
               </address>
               <div>
                 <IconButton

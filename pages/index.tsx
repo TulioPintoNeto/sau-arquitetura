@@ -46,7 +46,7 @@ export default function Home() {
           <Team />
           <Services />
           <Testimonials />
-          <Footer />
+          <Footer includesMicrodata />
         </div>
       </main>
       <CallUs />
