@@ -24,6 +24,6 @@ export class PageFramework {
   }
 
   private prepare(height: number) {
-    return this.page.goto(`/?isTestPurpose=true&homeMainHeight=${height}`);
+    return this.page.goto(`/?isTestPurpose=true&mainSectionHeight=${height}`);
   }
 }

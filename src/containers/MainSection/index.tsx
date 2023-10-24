@@ -2,7 +2,7 @@ import Container from "components/Container";
 import CN from 'classnames';
 import { HeaderSection } from "components/HeaderSection/index";
 import styles from "./styles.module.scss";
-import { useHomeMainHeight } from "src/hooks/useHomeMainHeight";
+import { useMainSectionHeight } from "src/hooks/useMainSectionHeight";
 
 interface Props {
   backgroundClassName: string;
@@ -10,8 +10,8 @@ interface Props {
   title: string;
 }
 
-const HomeMain = ({ backgroundClassName, text, title }: Props) => {
-  const height = useHomeMainHeight();
+const MainSection = ({ backgroundClassName, text, title }: Props) => {
+  const height = useMainSectionHeight();
 
   return (
     <div className={CN(styles.background, backgroundClassName)} style={{ height }}>
@@ -30,4 +30,4 @@ const HomeMain = ({ backgroundClassName, text, title }: Props) => {
   );
 };
 
-export default HomeMain;
+export default MainSection;

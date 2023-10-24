@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HomeMain from "containers/HomeMain/index";
+import MainSection from "src/containers/MainSection/index";
 import CallUs from "components/CallUs/index";
 import { AboutUs as Team } from "src/containers/Team/index";
 import { Services } from "containers/Services";
@@ -19,7 +19,7 @@ export default function Portfolio() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <HomeMain
+        <MainSection
           backgroundClassName={styles.background}
           text="Projetando e realizando sonhos"
           title="Arquitetura e Construção Civil em Pelotas"
