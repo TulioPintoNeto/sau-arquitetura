@@ -16,7 +16,7 @@ for (const viewport of viewports) {
     test.use({ viewport });
 
     test("should match home page", async ({ page }) => {
-      const pageFramework = new PageFramework(page);
+      const pageFramework = new PageFramework(page, '/');
 
       await pageFramework.testScreenshot(`index-${width}-${height}.png`, {
         viewport,

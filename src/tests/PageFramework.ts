@@ -9,9 +9,11 @@ interface ScreenshotOptions {
 
 export class PageFramework {
   private page: Page;
+  private path: string;
 
-  constructor(page: Page) {
+  constructor(page: Page, path: string) {
     this.page = page;
+    this.path = path;
   }
 
   async testScreenshot(name: string, { viewport }: ScreenshotOptions) {
@@ -24,6 +26,6 @@ export class PageFramework {
   }
 
   private prepare(height: number) {
-    return this.page.goto(`/?isTestPurpose=true&mainSectionHeight=${height}`);
+    return this.page.goto(`${this.path}?isTestPurpose=true&mainSectionHeight=${height}`);
   }
 }
