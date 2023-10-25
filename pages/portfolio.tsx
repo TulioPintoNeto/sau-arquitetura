@@ -1,9 +1,15 @@
 import Head from "next/head";
 import MainSection from "src/containers/MainSection/index";
 import { Footer } from "src/containers/Footer";
-import styles from 'styles/pages/portfolio.module.scss';
+import styles from "styles/pages/portfolio.module.scss";
+import { PortfolioService } from "src/domain/entities/PortfolioService";
+import { getPortfolio } from "src/data/endpoints/getPortfolio";
 
-export default function Portfolio() {
+interface Props {
+  portfolio: PortfolioService[];
+}
+
+export default function Portfolio({ portfolio }: Props) {
   return (
     <>
       <Head>
@@ -24,4 +30,10 @@ export default function Portfolio() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const portfolio = await getPortfolio();
+
+  return { props: { portfolio } };
 }
