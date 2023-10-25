@@ -20,8 +20,8 @@ const MainSection = ({ backgroundClassName, text, title }: Props) => {
           <div className={styles.constrainedBox}>
             <HeaderSection
               main
-              text="Projetando e realizando sonhos"
-              title="Arquitetura e Construção Civil em Pelotas"
+              text={text}
+              title={title}
             />
           </div>
         </Container>

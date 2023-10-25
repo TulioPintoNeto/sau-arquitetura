@@ -1,9 +1,5 @@
 import Head from "next/head";
 import MainSection from "src/containers/MainSection/index";
-import CallUs from "components/CallUs/index";
-import { AboutUs as Team } from "src/containers/Team/index";
-import { Services } from "containers/Services";
-import { Testimonials } from "src/containers/Testimonials";
 import { Footer } from "src/containers/Footer";
 import styles from 'styles/pages/portfolio.module.scss';
 
@@ -21,8 +17,8 @@ export default function Portfolio() {
       <main>
         <MainSection
           backgroundClassName={styles.background}
-          text="Projetando e realizando sonhos"
-          title="Arquitetura e Construção Civil em Pelotas"
+          text="Design, beleza e funcionalidade"
+          title="Portfólio"
         />
         <Footer />
       </main>
