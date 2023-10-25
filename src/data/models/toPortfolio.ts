@@ -15,7 +15,7 @@ const assetToPhoto = (asset: Asset | undefined): Photo | null => {
   }
 
   return {
-    url: asset.fields.file.url,
+    url: "https:" + asset.fields.file.url,
     alt: asset.fields.description,
   };
 };
@@ -24,7 +24,9 @@ const itemToPortfolioService =
   (json: PortfolioJSON) =>
   ({ fields }: Item): PortfolioService => {
     const firstPhotoId = fields.photos[0].sys.id;
-    const firstAsset = json.includes.Asset.find(({ sys }) => sys.id === firstPhotoId);
+    const firstAsset = json.includes.Asset.find(
+      ({ sys }) => sys.id === firstPhotoId
+    );
 
     return {
       name: fields.name,

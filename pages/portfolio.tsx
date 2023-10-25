@@ -4,6 +4,7 @@ import { Footer } from "src/containers/Footer";
 import styles from "styles/pages/portfolio.module.scss";
 import { PortfolioService } from "src/domain/entities/PortfolioService";
 import { getPortfolio } from "src/data/endpoints/getPortfolio";
+import { PortfolioSection } from "src/containers/PortfolioSection";
 
 interface Props {
   portfolio: PortfolioService[];
@@ -26,6 +27,7 @@ export default function Portfolio({ portfolio }: Props) {
           text="Design, beleza e funcionalidade"
           title="Portfólio"
         />
+        <PortfolioSection portfolio={portfolio} />
         <Footer />
       </main>
     </>
@@ -34,6 +36,7 @@ export default function Portfolio({ portfolio }: Props) {
 
 export async function getStaticProps() {
   const portfolio = await getPortfolio();
+  const minutesToUpdate = 5;
 
-  return { props: { portfolio } };
+  return { props: { portfolio }, revalidate: minutesToUpdate * 60 };
 }
