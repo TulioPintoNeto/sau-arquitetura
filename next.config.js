@@ -6,6 +6,16 @@ const nextConfig = {
         locales: ["pt-BR"],
         defaultLocale: "pt-BR",
     },
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'images.ctfassets.net',
+          port: '',
+          pathname: '/**',
+        },
+      ],
+    },
     reactStrictMode: true,
     sassOptions: {
         includePaths: [path.resolve(__dirname, "./src/styles")],

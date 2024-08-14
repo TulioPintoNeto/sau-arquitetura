@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { useHomeMainHeight } from "src/hooks/useHomeMainHeight";
+import { useMainSectionHeight } from "src/hooks/useMainSectionHeight";
 
 type NextImageProps = Parameters<typeof Image>[0];
 
 export function Img(props: NextImageProps) {
-  const homeMainHeight = useHomeMainHeight();
-  const loading = homeMainHeight === undefined ? "lazy" : "eager";
+  const mainSectionHeight = useMainSectionHeight();
+  const loading = mainSectionHeight === undefined ? "lazy" : "eager";
 
   return <Image {...props} alt={props.alt} fill loading={loading} />;
 }

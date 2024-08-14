@@ -1,0 +1,24 @@
+@use "sass:map";
+@import "colors";
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgBox {
+  position: relative;
+  flex: 1;
+}
+
+.textBox {
+  align-items: center;
+  background-color: map.get($secondary-colors, "900");
+  color: map.get($secondary-colors, "100");
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  padding: 0 8px;
+  text-align: center;
+  width: 100%;
+}

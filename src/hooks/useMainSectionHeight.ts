@@ -1,24 +1,23 @@
 import { useRouter } from "next/router";
-import { useLayoutEffect } from "react";
 
-export const useHomeMainHeight = () => {
+export const useMainSectionHeight = () => {
   const router = useRouter();
-  const { isTestPurpose, homeMainHeight: homeMainHeightParam } = router.query;
+  const { isTestPurpose, mainSectionHeight: mainSectionHeightParam } = router.query;
 
   const shouldSetHeight = (
     queryParam: string | string[] | undefined
   ): queryParam is string =>
     isTestPurpose === "true" && Boolean(queryParam) && !Array.isArray(queryParam);
 
-  const homeMainHeight = shouldSetHeight(homeMainHeightParam)
-    ? homeMainHeightParam
+  const mainSectionHeight = shouldSetHeight(mainSectionHeightParam)
+    ? mainSectionHeightParam
     : undefined;
-  const bodyHeight = homeMainHeight === undefined ? undefined : "auto";
+  const bodyHeight = mainSectionHeight === undefined ? undefined : "auto";
 
   if (bodyHeight) {
     document.getElementsByTagName("html")[0].style.height = bodyHeight;
     document.getElementsByTagName("body")[0].style.height = bodyHeight;
   }
 
-  return homeMainHeight;
+  return mainSectionHeight;
 };
