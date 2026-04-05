@@ -1,11 +1,11 @@
-@import "breakpoints";
+@use "breakpoints";
 
 .row {
   align-items: center;
   display: flex;
   flex-direction: column;
   
-  @include lg {
+  @include breakpoints.lg {
     flex-direction: row;
     margin: 0 -36px;
     

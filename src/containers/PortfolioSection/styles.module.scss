@@ -1,4 +1,4 @@
-@import "breakpoints";
+@use "breakpoints";
 
 .portfolioGrid {
   display: grid;
@@ -6,16 +6,16 @@
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 60vw;
   
-  @include md {
+  @include breakpoints.md {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
   }
   
-  @include lg {
+  @include breakpoints.lg {
     grid-auto-rows: 240px;
 }
 
-  @include xl {
+  @include breakpoints.xl {
     grid-auto-rows: 270px;
   }
 }

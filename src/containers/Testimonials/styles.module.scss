@@ -1,7 +1,7 @@
-@import "breakpoints";
+@use "breakpoints";
 
 .rowMarginBottom {
-  @include lg {
+  @include breakpoints.lg {
     margin-bottom: 160px;
   }
 }

@@ -1,6 +1,6 @@
 @use "sass:map";
+@use "breakpoints";
 @import "colors";
-@import "breakpoints";
 
 $line-color: map.get($primary-colors, "500");
 $lineWidth: 88px;
@@ -34,7 +34,7 @@ $lineWidth: 88px;
     margin-bottom: 32px;
 
     &.lg {
-      @include lg {
+      @include breakpoints.lg {
         @include left-aligned;
 
         &.center {
@@ -48,11 +48,11 @@ $lineWidth: 88px;
 .title {
   font-size: 2rem;
 
-  @include sm {
+  @include breakpoints.sm {
     font-size: 3rem;
   }
 
-  @include xxl {
+  @include breakpoints.xxl {
     font-size: 4rem;
   }
 }

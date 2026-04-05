@@ -1,14 +1,14 @@
-@import "breakpoints";
+@use "breakpoints";
 
 @mixin sizing {
   height: 50vh;
   
-  @include sm {
+  @include breakpoints.sm {
     height: 60vh;
     padding-bottom: 12vh;
   }
   
-  @include md {
+  @include breakpoints.md {
     height: 100vh;
     padding-bottom: 20vh;
   }
@@ -23,7 +23,7 @@
 
   @include sizing;
   
-  @include md {
+  @include breakpoints.md {
     background-attachment: fixed;
   }
 }

@@ -1,6 +1,6 @@
 @use "sass:map";
+@use "breakpoints";
 @import "colors";
-@import "breakpoints";
 
 .footer {
   background: url("/background-footer.png");
@@ -37,7 +37,7 @@
   & > *:first-child {
     margin-bottom: 32px;
 
-    @include lg {
+    @include breakpoints.lg {
       margin-bottom: 0;
     }
   }

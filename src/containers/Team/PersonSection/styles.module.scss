@@ -1,4 +1,4 @@
-@import "breakpoints";
+@use "breakpoints";
 
 .column {
   display: flex;
@@ -8,7 +8,7 @@
     flex-direction: column;
   }
 
-  @include lg {
+  @include breakpoints.lg {
     &.reversed {
       flex-direction: column-reverse;
     }
@@ -25,12 +25,12 @@
     object-fit: cover;
   }
 
-  @include lg {
+  @include breakpoints.lg {
     height: 380px;
     width: 400px;
   }
 
-  @include xl {
+  @include breakpoints.xl {
     height: 460px;
   }
 }

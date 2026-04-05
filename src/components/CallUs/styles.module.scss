@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "breakpoints";
+@use "breakpoints";
 @import "colors";
 
 .callUs {
@@ -17,7 +17,7 @@
 
     display: none;
 
-    @include lg {
+    @include breakpoints.lg {
         display: flex;
     }
 }

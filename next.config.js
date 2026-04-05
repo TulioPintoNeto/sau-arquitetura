@@ -17,9 +17,9 @@ const nextConfig = {
       ],
     },
     reactStrictMode: true,
-    sassOptions: {
-        includePaths: [path.resolve(__dirname, "./src/styles")],
-    },
+    // sassOptions: {
+    //     includePaths: [path.resolve(__dirname, "./src/styles")],
+    // },
 };
 
 module.exports = nextConfig;

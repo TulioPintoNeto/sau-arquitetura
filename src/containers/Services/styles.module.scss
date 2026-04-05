@@ -1,6 +1,6 @@
 @use "sass:map";
+@use "breakpoints";
 @import "colors";
-@import "breakpoints";
 
 $services-bg-color: map.get($secondary-colors, "200");
 
@@ -29,7 +29,7 @@ $services-bg-color: map.get($secondary-colors, "200");
     object-fit: cover;
   }
 
-  @include xl {
+  @include breakpoints.xl {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 240px);
     grid-template-areas: 

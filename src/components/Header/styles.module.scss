@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "breakpoints";
+@use "breakpoints";
 @import "colors";
 
 $header-border-color: map.get($secondary-colors, "500");
@@ -26,7 +26,7 @@ button.menuIcon {
     display: none;
   }
 
-  @include md {
+  @include breakpoints.md {
     display: none;
   }
 }
@@ -35,7 +35,7 @@ button.menuIcon {
   align-items: center;
   display: none;
 
-  @include md {
+  @include breakpoints.md {
     display: flex;
   }
 

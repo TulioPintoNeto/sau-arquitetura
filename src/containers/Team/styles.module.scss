@@ -1,4 +1,4 @@
-@import "breakpoints";
+@use "breakpoints";
 
 .row {
   margin: 0 -56px;
@@ -10,7 +10,7 @@
   & > *:last-child {
     margin-top: 32px;
 
-    @include lg {
+    @include breakpoints.lg {
       margin-top: 0;
     }
   }
