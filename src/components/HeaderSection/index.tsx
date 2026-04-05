@@ -1,4 +1,4 @@
-import React from "react";
+import { Title } from "../Title";
 import styles from "./styles.module.scss";
 import CN from "classnames";
 
@@ -17,6 +17,8 @@ export function HeaderSection({
   main = false,
   titleItemProp,
 }: Props) {
+  const tag = main ? "h1" : "h2";
+
   return (
     <div
       className={CN(styles.headerSection, {
@@ -25,11 +27,9 @@ export function HeaderSection({
       })}
     >
       <p className={styles.complementaryText}>{text}</p>
-      {main ? (
-        <h1 className={styles.title} itemProp={titleItemProp}>{title}</h1>
-      ) : (
-        <h2 className={styles.title} itemProp={titleItemProp}>{title}</h2>
-      )}
+      <Title tag={tag} itemProp={titleItemProp}>
+        {title}
+      </Title>
     </div>
   );
 }

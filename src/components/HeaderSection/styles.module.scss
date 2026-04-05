@@ -45,18 +45,6 @@ $lineWidth: 88px;
   }
 }
 
-.title {
-  font-size: 2rem;
-
-  @include breakpoints.sm {
-    font-size: 3rem;
-  }
-
-  @include breakpoints.xxl {
-    font-size: 4rem;
-  }
-}
-
 .complementaryText {
   font-weight: 700;
   margin-bottom: 40px;

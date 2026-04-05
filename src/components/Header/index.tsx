@@ -7,7 +7,6 @@ import { useState } from "react";
 import CN from "classnames";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 type ButtonProps = {
   href: string;
@@ -54,19 +53,21 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <nav className={styles.menu}>
-            <Button href="#sobre" text="Sobre" />
-            <Button href="#servicos" text="Serviços" />
-            <Button href="#depoimentos" text="Depoimentos" />
+            <Button href="/#sobre" text="Sobre" />
+            <Button href="/#servicos" text="Serviços" />
+            <Button href="/#depoimentos" text="Depoimentos" />
+            <Button href="/blog" text="Blog" />
           </nav>
           <Drawer anchor="right" open={isOpen} onClose={closeDrawer}>
             <nav className={styles.drawerContent}>
-              <Button href="#sobre" onClick={closeDrawer} text="Sobre" />
-              <Button href="#servicos" onClick={closeDrawer} text="Serviços" />
+              <Button href="/#sobre" onClick={closeDrawer} text="Sobre" />
+              <Button href="/#servicos" onClick={closeDrawer} text="Serviços" />
               <Button
-                href="#depoimentos"
+                href="/#depoimentos"
                 onClick={closeDrawer}
                 text="Depoimentos"
               />
+              <Button href="/blog" text="Blog" />
             </nav>
           </Drawer>
         </div>

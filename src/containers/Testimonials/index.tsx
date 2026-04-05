@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./styles.module.scss";
 import Container from "src/components/Container";
 import { HeaderSection } from "src/components/HeaderSection";

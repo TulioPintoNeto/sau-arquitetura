@@ -1,4 +1,4 @@
-import React from "react";
+
 import CN from 'classnames';
 import styles from "./styles.module.scss";
 

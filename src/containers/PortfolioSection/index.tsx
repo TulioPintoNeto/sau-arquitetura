@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./styles.module.scss";
 import { PortfolioService } from "src/domain/entities/PortfolioService";
 import { Service } from "./Service";
