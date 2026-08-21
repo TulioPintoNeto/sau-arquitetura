@@ -1,13 +1,14 @@
 @use "breakpoints";
+@use "typography";
 
 .title {
-  font-size: 2rem;
+  font-size: typography.$title-font-size-base;
 
   @include breakpoints.sm {
-    font-size: 3rem;
+    font-size: typography.$title-font-size-mid;
   }
 
   @include breakpoints.xxl {
-    font-size: 4rem;
+    font-size: typography.$title-font-size-large;
   }
 }

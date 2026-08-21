@@ -13,7 +13,7 @@ type Props = {
 export const Post = ({ body, title }: Props) => {
   return (
     <Container className={styles.postMaxWidth} verticalPadding="extra">
-      <Title>{title}</Title>
+      <Title className={styles.title}>{title}</Title>
       {documentToReactComponents(body, nextOptions)}
     </Container>
   );

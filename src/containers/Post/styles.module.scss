@@ -1,5 +1,14 @@
+@use "breakpoints";
+@use "typography";
+
 .postMaxWidth {
   max-width: 680px;
+
+  .title {
+    @include breakpoints.xxl {
+      font-size: typography.$title-font-size-mid;
+    }
+  }
 }
 
 .hyperlink {
