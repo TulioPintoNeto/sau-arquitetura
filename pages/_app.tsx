@@ -1,7 +1,7 @@
 import "styles/globals.scss";
-import type { AppProps } from "next/app";
-import Header from "components/Header";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Header from "components/Header";
+import type { AppProps } from "next/app";
 
 const theme = createTheme({
     palette: { primary: { main: "#2646e6" }, secondary: { main: "#fafafa" } },

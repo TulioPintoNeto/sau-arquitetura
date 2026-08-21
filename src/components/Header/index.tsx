@@ -1,12 +1,12 @@
+import MenuIcon from "@mui/icons-material/Menu";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import CN from "classnames";
+import { useState } from "react";
 import Container from "../Container";
 import styles from "./styles.module.scss";
 import _Button from "../Button";
 import { Logo } from "../Logo";
-import IconButton from "@mui/material/IconButton";
-import { useState } from "react";
-import CN from "classnames";
-import MenuIcon from "@mui/icons-material/Menu";
-import Drawer from "@mui/material/Drawer";
 
 type ButtonProps = {
   href: string;
@@ -56,7 +56,7 @@ const Header = () => {
             <Button href="/#sobre" text="Sobre" />
             <Button href="/#servicos" text="Serviços" />
             <Button href="/#depoimentos" text="Depoimentos" />
-            <Button href="/blog" text="Blog" />
+            <Button href="/blog/1" text="Blog" />
           </nav>
           <Drawer anchor="right" open={isOpen} onClose={closeDrawer}>
             <nav className={styles.drawerContent}>
@@ -67,7 +67,7 @@ const Header = () => {
                 onClick={closeDrawer}
                 text="Depoimentos"
               />
-              <Button href="/blog" text="Blog" />
+              <Button href="/blog/1" text="Blog" />
             </nav>
           </Drawer>
         </div>

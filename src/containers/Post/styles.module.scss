@@ -1,0 +1,12 @@
+.postMaxWidth {
+  max-width: 680px;
+}
+
+.hyperlink {
+  color: #1976d2;
+  text-decoration: underline;
+
+  &:hover {
+    color: #0d47a1;
+  }
+}

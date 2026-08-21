@@ -1,10 +1,10 @@
 
-import styles from "./styles.module.scss";
+import Link from "next/link";
 import Container from "src/components/Container";
 import { HeaderSection } from "src/components/HeaderSection";
-import { Testimonial } from "./Testimonial";
 import { Row } from "src/components/Row";
-import Link from "next/link";
+import styles from "./styles.module.scss";
+import { Testimonial } from "./Testimonial";
 
 export function Testimonials() {
   return (

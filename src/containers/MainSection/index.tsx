@@ -1,8 +1,8 @@
-import Container from "components/Container";
 import CN from 'classnames';
+import Container from "components/Container";
 import { HeaderSection } from "components/HeaderSection/index";
-import styles from "./styles.module.scss";
 import { useMainSectionHeight } from "src/hooks/useMainSectionHeight";
+import styles from "./styles.module.scss";
 
 interface Props {
   backgroundClassName: string;

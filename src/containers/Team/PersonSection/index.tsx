@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
-import styles from "./styles.module.scss";
 import CN from "classnames";
+import React, { Fragment } from "react";
 import { Img } from "src/components/Img";
+import styles from "./styles.module.scss";
 
 interface Props {
   alt: string;

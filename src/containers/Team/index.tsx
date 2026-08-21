@@ -1,7 +1,7 @@
 import Container from "components/Container/index";
 import { HeaderSection } from "components/HeaderSection";
-import { PersonSection } from "./PersonSection";
 import { Row } from "src/components/Row";
+import { PersonSection } from "./PersonSection";
 import styles from "./styles.module.scss";
 
 export function AboutUs() {

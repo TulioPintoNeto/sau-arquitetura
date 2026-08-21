@@ -1,8 +1,8 @@
 
-import styles from "./styles.module.scss";
+import Container from "src/components/Container";
 import { PortfolioService } from "src/domain/entities/PortfolioService";
 import { Service } from "./Service";
-import Container from "src/components/Container";
+import styles from "./styles.module.scss";
 
 interface Props {
   portfolio: PortfolioService[];

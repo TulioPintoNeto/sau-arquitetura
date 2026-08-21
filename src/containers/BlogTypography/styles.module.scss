@@ -1,0 +1,51 @@
+.typography {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  h6 {
+    font-size: 1.2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    margin-bottom: 1rem;
+  }
+
+  li > p {
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    margin-left: 1.5rem;
+  }
+
+  img {
+    margin: 1rem 0;
+  }
+}

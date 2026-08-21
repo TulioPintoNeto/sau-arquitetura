@@ -1,12 +1,11 @@
 import Head from "next/head";
-import MainSection from "src/containers/MainSection/index";
 import CallUs from "components/CallUs/index";
-import { AboutUs as Team } from "src/containers/Team/index";
 import { Services } from "containers/Services";
-import { Testimonials } from "src/containers/Testimonials";
 import { Footer } from "src/containers/Footer";
+import MainSection from "src/containers/MainSection/index";
+import { AboutUs as Team } from "src/containers/Team/index";
+import { Testimonials } from "src/containers/Testimonials";
 import styles from "styles/pages/home.module.scss";
-
 
 export default function Home() {
   return (

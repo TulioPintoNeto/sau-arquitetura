@@ -1,9 +1,8 @@
-
-import styles from "./styles.module.scss";
-import { HeaderSection } from "components/HeaderSection";
 import Container from "components/Container";
-import { ServiceSection } from "./ServiceSection";
+import { HeaderSection } from "components/HeaderSection";
 import { Img } from "src/components/Img";
+import { ServiceSection } from "./ServiceSection";
+import styles from "./styles.module.scss";
 
 export function Services() {
   return (

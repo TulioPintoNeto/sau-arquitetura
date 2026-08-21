@@ -1,12 +1,13 @@
-import styles from "./styles.module.scss";
-import Container from "src/components/Container";
-import { Logo } from "src/components/Logo";
-import { Row } from "src/components/Row";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import IconButton from "@mui/material/IconButton";
+import Container from "src/components/Container";
+import { Logo } from "src/components/Logo";
+import { Row } from "src/components/Row";
+
+import styles from "./styles.module.scss";
 
 export function Footer() {
   return (

@@ -1,8 +1,6 @@
-
-import styles from "./styles.module.scss";
-import { PortfolioService } from "src/domain/entities/PortfolioService";
 import { Img } from "src/components/Img";
-import { Photo } from "src/domain/entities/Photo";
+import { PortfolioService } from "src/domain/entities/PortfolioService";
+import styles from "./styles.module.scss";
 
 interface Props {
   portfolioService: PortfolioService;
@@ -22,7 +20,9 @@ export function Service({ portfolioService }: Props) {
           <Img src={url} alt={alt} />
         </div>
       )}
-      <div className={styles.textBox}><p>{name}</p></div>
+      <div className={styles.textBox}>
+        <p>{name}</p>
+      </div>
     </div>
   );
 }

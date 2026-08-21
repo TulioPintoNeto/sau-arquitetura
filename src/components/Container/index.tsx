@@ -1,24 +1,26 @@
-import { ReactNode, useCallback } from "react";
+import cn from "classnames";
+import { ReactNode } from "react";
 import styles from "./styles.module.scss";
 
 interface Props {
-    children: ReactNode;
-    className?: string;
-    verticalPadding?: boolean;
+  children: ReactNode;
+  className?: string;
+  verticalPadding?: boolean | "extra";
 }
 
-const Container = ({ children, className, verticalPadding = false }: Props) => {
-    const getClasses = useCallback(() => {
-        const classes: (String | undefined)[] = [styles.container, className];
-
-        if (verticalPadding) {
-            classes.push(styles.verticalPadding);
-        }
-
-        return classes.join(" ");
-    }, [className, verticalPadding]);
-
-    return <div className={getClasses()}>{children}</div>;
-};
+const Container = ({ children, className, verticalPadding = false }: Props) => (
+  <div
+    className={cn([
+      styles.container,
+      className,
+      {
+        [styles.extraPadding]: verticalPadding === "extra",
+        [styles.verticalPadding]: verticalPadding === true,
+      },
+    ])}
+  >
+    {children}
+  </div>
+);
 
 export default Container;

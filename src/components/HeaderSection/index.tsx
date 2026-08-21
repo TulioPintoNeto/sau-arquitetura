@@ -1,6 +1,6 @@
+import CN from "classnames";
 import { Title } from "../Title";
 import styles from "./styles.module.scss";
-import CN from "classnames";
 
 type Props = {
   title: string;
