@@ -36,16 +36,14 @@ export function Footer() {
                 itemScope
                 itemType="http://schema.org/PostalAddress"
               >
-                <p>Parque Una Pelotas,</p>
                 <p>
-                  <span itemProp="streetAddress">Av. Dois, n°100</span> Plex Hub
-                  Corporativo
+                  <span itemProp="streetAddress">R. Dr. Cassiano, 284</span>
                 </p>
-                <p>Sala 509, Areal</p>
+                <p>Sala 204, Centro</p>
                 <p>
                   <span itemProp="addressLocality">Pelotas</span> -{" "}
                   <span itemProp="addressRegion">RS</span> -{" "}
-                  <span itemProp="postalCode">96075-160</span>
+                  <span itemProp="postalCode">96015-700</span>
                 </p>
               </address>
               <div>
