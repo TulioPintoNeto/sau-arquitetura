@@ -10,9 +10,12 @@ type Props = {
   title: string;
   description: string;
   body: Document;
+  url: string;
 };
 
 const descriptionMaxLength = 160;
+
+const BASE_URL = "https://sauarquitetura.com.br";
 
 function buildDescription(doc: Document) {
   const firstParagraph = doc.content.find(
@@ -52,23 +55,29 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
       title: post.title,
       description: buildDescription(post.body),
       body: post.body,
+      url: `${BASE_URL}/blog/post/${params.slug}`,
     },
     revalidate: 60,
   };
 };
 
-export default function BlogPost({ body, description, title }: Props) {
+export default function BlogPost({ body, description, title, url }: Props) {
   return (
     <>
       <Head>
         <title>{`${title} - SAU Arquitetura e Construção`}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={url} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
       </Head>
       <BlogTypography>
         <main>
           <article>
-            <Post title={title} body={body} />
+            <Post title={title} body={body} url={url} />
           </article>
           <Footer />
         </main>
