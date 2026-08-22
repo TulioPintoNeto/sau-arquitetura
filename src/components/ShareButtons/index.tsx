@@ -1,5 +1,6 @@
 import CheckIcon from "@mui/icons-material/Check";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ShareIcon from "@mui/icons-material/Share";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -45,6 +46,9 @@ export const ShareButtons = ({ title, url }: Props) => {
   const whatsAppUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
     `${title} ${url}`,
   )}`;
+  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+    url,
+  )}`;
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
     url,
   )}`;
@@ -52,27 +56,33 @@ export const ShareButtons = ({ title, url }: Props) => {
   return (
     <div className={styles.share}>
       <span className={styles.label}>Compartilhar</span>
-      {hasNativeShare ? (
-        <IconButton onClick={shareNatively} aria-label="Compartilhar">
-          <ShareIcon />
-        </IconButton>
-      ) : (
-        <>
-          <IconButton
-            href={whatsAppUrl}
-            target="_blank"
-            aria-label="Compartilhar no WhatsApp"
-          >
-            <WhatsAppIcon />
+      <IconButton
+        href={whatsAppUrl}
+        target="_blank"
+        aria-label="Compartilhar no WhatsApp"
+      >
+        <WhatsAppIcon />
+      </IconButton>
+      <IconButton
+        href={facebookUrl}
+        target="_blank"
+        aria-label="Compartilhar no Facebook"
+      >
+        <FacebookIcon />
+      </IconButton>
+      <IconButton
+        href={linkedInUrl}
+        target="_blank"
+        aria-label="Compartilhar no LinkedIn"
+      >
+        <LinkedInIcon />
+      </IconButton>
+      {hasNativeShare && (
+        <Tooltip title="Mais opções">
+          <IconButton onClick={shareNatively} aria-label="Mais opções">
+            <ShareIcon />
           </IconButton>
-          <IconButton
-            href={linkedInUrl}
-            target="_blank"
-            aria-label="Compartilhar no LinkedIn"
-          >
-            <LinkedInIcon />
-          </IconButton>
-        </>
+        </Tooltip>
       )}
       <Tooltip title={copied ? "Link copiado" : "Copiar link"}>
         <IconButton onClick={copyLink} aria-label="Copiar link">
