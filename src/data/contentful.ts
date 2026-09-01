@@ -45,6 +45,7 @@ class Content {
   private posts(query: BlogPostQuery) {
     return client.getEntries<BlogPostSkeleton>({
       content_type: "posts",
+      order: ["-sys.createdAt"],
       ...query,
     });
   }

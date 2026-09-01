@@ -2,6 +2,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import CN from "classnames";
+import Link from "next/link";
 import { useState } from "react";
 import Container from "../Container";
 import styles from "./styles.module.scss";
@@ -40,7 +41,9 @@ const Header = () => {
     <header className={styles.header}>
       <Container>
         <div className={styles.row}>
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <IconButton
             color="inherit"
             aria-label="open drawer"
